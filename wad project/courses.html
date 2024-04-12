@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Details</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #343a40; /* Dark background color */
+        color: #ffffff; /* Light text color */
+      }
+      .navbar {
+        background-color: #212529 !important; /* Dark navbar background color */
+      }
+      .card {
+        background-color: #454d55; /* Dark card background color */
+        border: none; /* Remove border */
+        border-radius: 0.25rem; /* Add border radius */
+      }
+      .card-title,
+      .card-text {
+        color: #ffffff; /* Light card text color */
+      }
+      .btn-primary {
+        background-color: #007bff; /* Adjust primary button color */
+        border-color: #007bff; /* Adjust primary button border color */
+      }
+      .btn-primary:hover {
+        background-color: #0056b3; /* Adjust primary button hover color */
+        border-color: #0056b3; /* Adjust primary button hover border color */
+      }
+      .btn-success {
+        background-color: #28a745; /* Adjust success button color */
+        border-color: #28a745; /* Adjust success button border color */
+      }
+      .btn-success:hover {
+        background-color: #218838; /* Adjust success button hover color */
+        border-color: #218838; /* Adjust success button hover border color */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Online Course Enrollment</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarNav"
+          >
+            <div>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="main.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="dashboard.php" id="dashboardBtn"
+                    >Dashboard</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.php" id="loginBtn">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="signup.html" id="signupBtn"
+                    >Sign Up</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="logout.html"
+                    id="logoutBtn"
+                    style="display: none"
+                    >Logout</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Course 1 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Full Stack Web Development</h5>
+              <p class="card-text">
+                Learn the skills needed to become a full-stack web developer,
+                covering both front-end and back-end technologies such as HTML,
+                CSS, JavaScript, Node.js, and MongoDB.
+              </p>
+              <p><strong>Duration:</strong> 6 months</p>
+              <p>
+                <strong>Prerequisites:</strong> Basic understanding of
+                programming concepts and familiarity with web technologies.
+              </p>
+              <a href="Application.html" class="btn btn-success">Register</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Data Science and Machine Learning</h5>
+              <p class="card-text">
+                Dive into the world of data science and machine learning,
+                exploring topics like data analysis, statistical modeling, and
+                predictive analytics using Python and libraries like TensorFlow.
+              </p>
+              <p><strong>Duration:</strong> 12 weeks</p>
+              <p>
+                <strong>Prerequisites:</strong> Basic knowledge of programming
+                and mathematics.
+              </p>
+              <a href="apllicationdsml.html" class="btn btn-success"
+                >Register</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">
+                Mobile App Development with React Native
+              </h5>
+              <p class="card-text">
+                Learn how to build cross-platform mobile applications using
+                React Native, covering topics such as UI development, state
+                management, and integrating with backend services.
+              </p>
+              <p><strong>Duration:</strong> 8 weeks</p>
+              <p>
+                <strong>Prerequisites:</strong> Proficiency in JavaScript and
+                basic knowledge of React.js.
+              </p>
+              <a href="applicationmad.html" class="btn btn-success">Register</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Cybersecurity Fundamentals</h5>
+              <p class="card-text">
+                Gain a foundational understanding of cybersecurity principles
+                and practices, covering topics such as network security,
+                cryptography, ethical hacking, and risk management.
+              </p>
+              <p><strong>Duration:</strong> 10 weeks</p>
+              <p>
+                <strong>Prerequisites:</strong> Basic knowledge of computer
+                systems and networks.
+              </p>
+              <a href="apllicationfunda.html" class="btn btn-success"
+                >Register</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 5 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Digital Marketing Strategies</h5>
+              <p class="card-text">
+                Explore the world of digital marketing and learn how to create
+                effective strategies for online advertising, social media
+                marketing, content marketing, and search engine optimization
+                (SEO).
+              </p>
+              <p><strong>Duration:</strong> 8 weeks</p>
+              <p><strong>Prerequisites:</strong> None</p>
+              <a href="applicationdigi.html" class="btn btn-success"
+                >Register</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
